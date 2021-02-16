@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FDDB71925DBD82E00387B41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB71825DBD82E00387B41 /* AppDelegate.swift */; };
+		3FDDB71B25DBD82E00387B41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB71A25DBD82E00387B41 /* SceneDelegate.swift */; };
+		3FDDB71D25DBD82E00387B41 /* PropertyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB71C25DBD82E00387B41 /* PropertyListViewController.swift */; };
+		3FDDB72025DBD82E00387B41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDDB71E25DBD82E00387B41 /* Main.storyboard */; };
+		3FDDB72325DBD82E00387B41 /* PropertyBooking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB72125DBD82E00387B41 /* PropertyBooking.xcdatamodeld */; };
+		3FDDB72525DBD82F00387B41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDDB72425DBD82F00387B41 /* Assets.xcassets */; };
+		3FDDB72825DBD82F00387B41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDDB72625DBD82F00387B41 /* LaunchScreen.storyboard */; };
+		3FDDB73325DBD82F00387B41 /* PropertyBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB73225DBD82F00387B41 /* PropertyBookingTests.swift */; };
+		3FDDB73E25DBD82F00387B41 /* PropertyBookingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB73D25DBD82F00387B41 /* PropertyBookingUITests.swift */; };
+		3FDDB75025DBE1DC00387B41 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB74F25DBE1DC00387B41 /* NetworkClient.swift */; };
+		3FDDB75825DBE1ED00387B41 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB75725DBE1ED00387B41 /* Reachability.swift */; };
+		3FDDB75E25DBE23000387B41 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDDB75D25DBE23000387B41 /* SystemConfiguration.framework */; };
+		3FDDB76125DBE2CE00387B41 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB76025DBE2CE00387B41 /* Constants.swift */; };
+		3FDDB76825DBE52400387B41 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB76725DBE52400387B41 /* Property.swift */; };
+		3FDDB76D25DBE57E00387B41 /* PropertyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB76C25DBE57E00387B41 /* PropertyRepository.swift */; };
+		3FDDB77225DBE5C000387B41 /* PropertyListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB77125DBE5C000387B41 /* PropertyListPresenter.swift */; };
+		3FDDB77E25DBE86900387B41 /* PropertyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB77C25DBE86900387B41 /* PropertyListTableViewCell.swift */; };
+		3FDDB77F25DBE86900387B41 /* PropertyListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDDB77D25DBE86900387B41 /* PropertyListTableViewCell.xib */; };
+		3FDDB78425DBEFCB00387B41 /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB78325DBEFCB00387B41 /* DropDownButton.swift */; };
+		3FDDB78C25DBF58900387B41 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB78B25DBF58900387B41 /* CustomButton.swift */; };
+		3FDDB7A925DC28A100387B41 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB7A825DC28A100387B41 /* CardView.swift */; };
+		3FDDB7B525DC9CF300387B41 /* RoomsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDB7B325DC9CF300387B41 /* RoomsListTableViewCell.swift */; };
+		3FDDB7B625DC9CF300387B41 /* RoomsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDDB7B425DC9CF300387B41 /* RoomsListTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FDDB72F25DBD82F00387B41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FDDB70D25DBD82E00387B41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FDDB71425DBD82E00387B41;
+			remoteInfo = PropertyBooking;
+		};
+		3FDDB73A25DBD82F00387B41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FDDB70D25DBD82E00387B41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FDDB71425DBD82E00387B41;
+			remoteInfo = PropertyBooking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FDDB71525DBD82E00387B41 /* PropertyBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropertyBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDDB71825DBD82E00387B41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FDDB71A25DBD82E00387B41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3FDDB71C25DBD82E00387B41 /* PropertyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewController.swift; sourceTree = "<group>"; };
+		3FDDB71F25DBD82E00387B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FDDB72225DBD82E00387B41 /* PropertyBooking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PropertyBooking.xcdatamodel; sourceTree = "<group>"; };
+		3FDDB72425DBD82F00387B41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FDDB72725DBD82F00387B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FDDB72925DBD82F00387B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FDDB72E25DBD82F00387B41 /* PropertyBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertyBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDDB73225DBD82F00387B41 /* PropertyBookingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyBookingTests.swift; sourceTree = "<group>"; };
+		3FDDB73425DBD82F00387B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FDDB73925DBD82F00387B41 /* PropertyBookingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertyBookingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDDB73D25DBD82F00387B41 /* PropertyBookingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyBookingUITests.swift; sourceTree = "<group>"; };
+		3FDDB73F25DBD82F00387B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FDDB74F25DBE1DC00387B41 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		3FDDB75725DBE1ED00387B41 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		3FDDB75D25DBE23000387B41 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3FDDB76025DBE2CE00387B41 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3FDDB76725DBE52400387B41 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		3FDDB76C25DBE57E00387B41 /* PropertyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyRepository.swift; sourceTree = "<group>"; };
+		3FDDB77125DBE5C000387B41 /* PropertyListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListPresenter.swift; sourceTree = "<group>"; };
+		3FDDB77C25DBE86900387B41 /* PropertyListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListTableViewCell.swift; sourceTree = "<group>"; };
+		3FDDB77D25DBE86900387B41 /* PropertyListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertyListTableViewCell.xib; sourceTree = "<group>"; };
+		3FDDB78325DBEFCB00387B41 /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
+		3FDDB78B25DBF58900387B41 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3FDDB7A825DC28A100387B41 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3FDDB7B325DC9CF300387B41 /* RoomsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsListTableViewCell.swift; sourceTree = "<group>"; };
+		3FDDB7B425DC9CF300387B41 /* RoomsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomsListTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FDDB71225DBD82E00387B41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDDB75E25DBE23000387B41 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FDDB72B25DBD82F00387B41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FDDB73625DBD82F00387B41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FDDB70C25DBD82E00387B41 = {
+			isa = PBXGroup;
+			children = (
+				3FDDB71725DBD82E00387B41 /* PropertyBooking */,
+				3FDDB73125DBD82F00387B41 /* PropertyBookingTests */,
+				3FDDB73C25DBD82F00387B41 /* PropertyBookingUITests */,
+				3FDDB71625DBD82E00387B41 /* Products */,
+				3FDDB75C25DBE23000387B41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3FDDB71625DBD82E00387B41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDB71525DBD82E00387B41 /* PropertyBooking.app */,
+				3FDDB72E25DBD82F00387B41 /* PropertyBookingTests.xctest */,
+				3FDDB73925DBD82F00387B41 /* PropertyBookingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FDDB71725DBD82E00387B41 /* PropertyBooking */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDB71825DBD82E00387B41 /* AppDelegate.swift */,
+				3FDDB71A25DBD82E00387B41 /* SceneDelegate.swift */,
+				3FDDB76525DBE4F700387B41 /* Module */,
+				3FDDB75F25DBE2B100387B41 /* Helper */,
+				3FDDB74E25DBE1BE00387B41 /* Network */,
+				3FDDB71E25DBD82E00387B41 /* Main.storyboard */,
+				3FDDB72425DBD82F00387B41 /* Assets.xcassets */,
+				3FDDB72625DBD82F00387B41 /* LaunchScreen.storyboard */,
+				3FDDB72925DBD82F00387B41 /* Info.plist */,
+				3FDDB72125DBD82E00387B41 /* PropertyBooking.xcdatamodeld */,
+			);
+			path = PropertyBooking;
+			sourceTree = "<group>";
+		};
+		3FDDB73125DBD82F00387B41 /* PropertyBookingTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDB73225DBD82F00387B41 /* PropertyBookingTests.swift */,
+				3FDDB73425DBD82F00387B41 /* Info.plist */,
+			);
+			path = PropertyBookingTests;
+			sourceTree = "<group>";
+		};
+		3FDDB73C25DBD82F00387B41 /* PropertyBookingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDB73D25DBD82F00387B41 /* PropertyBookingUITests.swift */,
+				3FDDB73F25DBD82F00387B41 /* Info.plist */,
+			);
+			path = PropertyBookingUITests;
+			sourceTree = "<group>";
+		};
+		3FDDB74E25DBE1BE00387B41 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDB74F25DBE1DC00387B41 /* NetworkClient.swift */,
+				3FDDB75725DBE1ED00387B41 /* Reachability.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3FDDB75C25DBE23000387B41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDB75D25DBE23000387B41 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FDDB75F25DBE2B100387B41 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDB76025DBE2CE00387B41 /* Constants.swift */,
+				3FDDB78325DBEFCB00387B41 /* DropDownButton.swift */,
+				3FDDB78B25DBF58900387B41 /* CustomButton.swift */,
+				3FDDB7A825DC28A100387B41 /* CardView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3FDDB76525DBE4F700387B41 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDB76625DBE50D00387B41 /* PropertyList */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		3FDDB76625DBE50D00387B41 /* PropertyList */ = {
+			isa = PBXGroup;
+			children = (
+				3FDDB76725DBE52400387B41 /* Property.swift */,
+				3FDDB76C25DBE57E00387B41 /* PropertyRepository.swift */,
+				3FDDB77125DBE5C000387B41 /* PropertyListPresenter.swift */,
+				3FDDB71C25DBD82E00387B41 /* PropertyListViewController.swift */,
+				3FDDB77C25DBE86900387B41 /* PropertyListTableViewCell.swift */,
+				3FDDB77D25DBE86900387B41 /* PropertyListTableViewCell.xib */,
+				3FDDB7B325DC9CF300387B41 /* RoomsListTableViewCell.swift */,
+				3FDDB7B425DC9CF300387B41 /* RoomsListTableViewCell.xib */,
+			);
+			path = PropertyList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FDDB71425DBD82E00387B41 /* PropertyBooking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FDDB74225DBD82F00387B41 /* Build configuration list for PBXNativeTarget "PropertyBooking" */;
+			buildPhases = (
+				3FDDB71125DBD82E00387B41 /* Sources */,
+				3FDDB71225DBD82E00387B41 /* Frameworks */,
+				3FDDB71325DBD82E00387B41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PropertyBooking;
+			productName = PropertyBooking;
+			productReference = 3FDDB71525DBD82E00387B41 /* PropertyBooking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FDDB72D25DBD82F00387B41 /* PropertyBookingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FDDB74525DBD82F00387B41 /* Build configuration list for PBXNativeTarget "PropertyBookingTests" */;
+			buildPhases = (
+				3FDDB72A25DBD82F00387B41 /* Sources */,
+				3FDDB72B25DBD82F00387B41 /* Frameworks */,
+				3FDDB72C25DBD82F00387B41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FDDB73025DBD82F00387B41 /* PBXTargetDependency */,
+			);
+			name = PropertyBookingTests;
+			productName = PropertyBookingTests;
+			productReference = 3FDDB72E25DBD82F00387B41 /* PropertyBookingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FDDB73825DBD82F00387B41 /* PropertyBookingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FDDB74825DBD82F00387B41 /* Build configuration list for PBXNativeTarget "PropertyBookingUITests" */;
+			buildPhases = (
+				3FDDB73525DBD82F00387B41 /* Sources */,
+				3FDDB73625DBD82F00387B41 /* Frameworks */,
+				3FDDB73725DBD82F00387B41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FDDB73B25DBD82F00387B41 /* PBXTargetDependency */,
+			);
+			name = PropertyBookingUITests;
+			productName = PropertyBookingUITests;
+			productReference = 3FDDB73925DBD82F00387B41 /* PropertyBookingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FDDB70D25DBD82E00387B41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3FDDB71425DBD82E00387B41 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3FDDB72D25DBD82F00387B41 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3FDDB71425DBD82E00387B41;
+					};
+					3FDDB73825DBD82F00387B41 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3FDDB71425DBD82E00387B41;
+					};
+				};
+			};
+			buildConfigurationList = 3FDDB71025DBD82E00387B41 /* Build configuration list for PBXProject "PropertyBooking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FDDB70C25DBD82E00387B41;
+			productRefGroup = 3FDDB71625DBD82E00387B41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FDDB71425DBD82E00387B41 /* PropertyBooking */,
+				3FDDB72D25DBD82F00387B41 /* PropertyBookingTests */,
+				3FDDB73825DBD82F00387B41 /* PropertyBookingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FDDB71325DBD82E00387B41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDDB72825DBD82F00387B41 /* LaunchScreen.storyboard in Resources */,
+				3FDDB72525DBD82F00387B41 /* Assets.xcassets in Resources */,
+				3FDDB7B625DC9CF300387B41 /* RoomsListTableViewCell.xib in Resources */,
+				3FDDB77F25DBE86900387B41 /* PropertyListTableViewCell.xib in Resources */,
+				3FDDB72025DBD82E00387B41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FDDB72C25DBD82F00387B41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FDDB73725DBD82F00387B41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FDDB71125DBD82E00387B41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDDB7A925DC28A100387B41 /* CardView.swift in Sources */,
+				3FDDB78C25DBF58900387B41 /* CustomButton.swift in Sources */,
+				3FDDB76D25DBE57E00387B41 /* PropertyRepository.swift in Sources */,
+				3FDDB78425DBEFCB00387B41 /* DropDownButton.swift in Sources */,
+				3FDDB77225DBE5C000387B41 /* PropertyListPresenter.swift in Sources */,
+				3FDDB71D25DBD82E00387B41 /* PropertyListViewController.swift in Sources */,
+				3FDDB7B525DC9CF300387B41 /* RoomsListTableViewCell.swift in Sources */,
+				3FDDB75025DBE1DC00387B41 /* NetworkClient.swift in Sources */,
+				3FDDB75825DBE1ED00387B41 /* Reachability.swift in Sources */,
+				3FDDB71925DBD82E00387B41 /* AppDelegate.swift in Sources */,
+				3FDDB76125DBE2CE00387B41 /* Constants.swift in Sources */,
+				3FDDB72325DBD82E00387B41 /* PropertyBooking.xcdatamodeld in Sources */,
+				3FDDB76825DBE52400387B41 /* Property.swift in Sources */,
+				3FDDB71B25DBD82E00387B41 /* SceneDelegate.swift in Sources */,
+				3FDDB77E25DBE86900387B41 /* PropertyListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FDDB72A25DBD82F00387B41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDDB73325DBD82F00387B41 /* PropertyBookingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FDDB73525DBD82F00387B41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDDB73E25DBD82F00387B41 /* PropertyBookingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FDDB73025DBD82F00387B41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FDDB71425DBD82E00387B41 /* PropertyBooking */;
+			targetProxy = 3FDDB72F25DBD82F00387B41 /* PBXContainerItemProxy */;
+		};
+		3FDDB73B25DBD82F00387B41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FDDB71425DBD82E00387B41 /* PropertyBooking */;
+			targetProxy = 3FDDB73A25DBD82F00387B41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FDDB71E25DBD82E00387B41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FDDB71F25DBD82E00387B41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FDDB72625DBD82F00387B41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FDDB72725DBD82F00387B41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FDDB74025DBD82F00387B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FDDB74125DBD82F00387B41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FDDB74325DBD82F00387B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PropertyBooking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitacs.PropertyBooking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FDDB74425DBD82F00387B41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PropertyBooking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitacs.PropertyBooking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FDDB74625DBD82F00387B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PropertyBookingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitacs.PropertyBookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PropertyBooking.app/PropertyBooking";
+			};
+			name = Debug;
+		};
+		3FDDB74725DBD82F00387B41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PropertyBookingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitacs.PropertyBookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PropertyBooking.app/PropertyBooking";
+			};
+			name = Release;
+		};
+		3FDDB74925DBD82F00387B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PropertyBookingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitacs.PropertyBookingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PropertyBooking;
+			};
+			name = Debug;
+		};
+		3FDDB74A25DBD82F00387B41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PropertyBookingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitacs.PropertyBookingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PropertyBooking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FDDB71025DBD82E00387B41 /* Build configuration list for PBXProject "PropertyBooking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FDDB74025DBD82F00387B41 /* Debug */,
+				3FDDB74125DBD82F00387B41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FDDB74225DBD82F00387B41 /* Build configuration list for PBXNativeTarget "PropertyBooking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FDDB74325DBD82F00387B41 /* Debug */,
+				3FDDB74425DBD82F00387B41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FDDB74525DBD82F00387B41 /* Build configuration list for PBXNativeTarget "PropertyBookingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FDDB74625DBD82F00387B41 /* Debug */,
+				3FDDB74725DBD82F00387B41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FDDB74825DBD82F00387B41 /* Build configuration list for PBXNativeTarget "PropertyBookingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FDDB74925DBD82F00387B41 /* Debug */,
+				3FDDB74A25DBD82F00387B41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FDDB72125DBD82E00387B41 /* PropertyBooking.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FDDB72225DBD82E00387B41 /* PropertyBooking.xcdatamodel */,
+			);
+			currentVersion = 3FDDB72225DBD82E00387B41 /* PropertyBooking.xcdatamodel */;
+			path = PropertyBooking.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3FDDB70D25DBD82E00387B41 /* Project object */;
+}

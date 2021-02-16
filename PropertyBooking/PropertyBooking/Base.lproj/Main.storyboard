@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Property List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PropertyListViewController" customModule="PropertyBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLS-ry-gxK" customClass="CardView" customModule="PropertyBooking" customModuleProvider="target">
+                                <rect key="frame" x="8" y="48" width="398" height="172"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4im-dQ-neI">
+                                        <rect key="frame" x="360" y="8" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="01p-ZP-PaU"/>
+                                            <constraint firstAttribute="width" constant="30" id="QNc-NS-4sw"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="location.slash" catalog="system"/>
+                                        <connections>
+                                            <action selector="locationPermissionChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gEW-ZE-os4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7N-QY-X02">
+                                        <rect key="frame" x="4" y="64" width="35" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhv-4k-atM">
+                                        <rect key="frame" x="100" y="64" width="18.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="1aO-HL-pkp">
+                                        <rect key="frame" x="4" y="88" width="80" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="0TM-4V-C6C"/>
+                                            <constraint firstAttribute="height" constant="30" id="1jR-gV-FuX"/>
+                                        </constraints>
+                                    </datePicker>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="jfk-Lw-AO1">
+                                        <rect key="frame" x="100" y="88" width="80" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="iAU-2C-n3S"/>
+                                            <constraint firstAttribute="width" constant="80" id="yYb-CE-56a"/>
+                                        </constraints>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSa-bp-roK">
+                                        <rect key="frame" x="200" y="64" width="41.5" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycV-at-3rD" customClass="DropDownButton" customModule="PropertyBooking" customModuleProvider="target">
+                                        <rect key="frame" x="200" y="88" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="CoS-mb-Iqj"/>
+                                            <constraint firstAttribute="width" constant="70" id="U0l-T2-1X4"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="arrowtriangle.down.fill" catalog="system" renderingMode="original"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showRooms:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEw-J1-GNf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1z-R2-aQz" customClass="CustomButton" customModule="PropertyBooking" customModuleProvider="target">
+                                        <rect key="frame" x="209" y="140" width="60" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="fod-jk-avo"/>
+                                            <constraint firstAttribute="height" constant="24" id="h2g-sU-Jsf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemGreenColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EdB-UR-7eB"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Booking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNB-zS-dra">
+                                        <rect key="frame" x="127.5" y="8" width="143" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDu-8D-gv9" customClass="CustomButton" customModule="PropertyBooking" customModuleProvider="target">
+                                        <rect key="frame" x="129" y="140" width="60" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="7Sd-zE-sZB"/>
+                                            <constraint firstAttribute="height" constant="24" id="AD5-TE-Yr6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" systemColor="systemGreenColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clearSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHo-wJ-Cvn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.49019607843137253" green="0.58823529411764708" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qSa-bp-roK" firstAttribute="top" secondItem="uLS-ry-gxK" secondAttribute="top" constant="64" id="18d-zN-BaE"/>
+                                    <constraint firstItem="Nhv-4k-atM" firstAttribute="top" secondItem="uLS-ry-gxK" secondAttribute="top" constant="64" id="5bQ-HT-GxC"/>
+                                    <constraint firstAttribute="bottom" secondItem="kDu-8D-gv9" secondAttribute="bottom" constant="8" id="5lf-rh-Qvs"/>
+                                    <constraint firstItem="x1z-R2-aQz" firstAttribute="centerX" secondItem="uLS-ry-gxK" secondAttribute="centerX" constant="40" id="B76-Ce-UC4"/>
+                                    <constraint firstItem="jfk-Lw-AO1" firstAttribute="top" secondItem="Nhv-4k-atM" secondAttribute="bottom" constant="8" id="C4D-gR-hsg"/>
+                                    <constraint firstItem="jfk-Lw-AO1" firstAttribute="leading" secondItem="Nhv-4k-atM" secondAttribute="leading" id="H1w-Ve-sWV"/>
+                                    <constraint firstItem="ycV-at-3rD" firstAttribute="top" secondItem="qSa-bp-roK" secondAttribute="bottom" constant="8" id="JOO-fK-q8V"/>
+                                    <constraint firstItem="kDu-8D-gv9" firstAttribute="centerX" secondItem="uLS-ry-gxK" secondAttribute="centerX" constant="-40" id="Q1P-Ji-YAl"/>
+                                    <constraint firstItem="ycV-at-3rD" firstAttribute="leading" secondItem="qSa-bp-roK" secondAttribute="leading" id="QfI-El-8g3"/>
+                                    <constraint firstItem="lNB-zS-dra" firstAttribute="centerX" secondItem="uLS-ry-gxK" secondAttribute="centerX" id="QmU-JM-IZV"/>
+                                    <constraint firstItem="x1z-R2-aQz" firstAttribute="top" secondItem="uLS-ry-gxK" secondAttribute="top" constant="140" id="T6l-f9-keb"/>
+                                    <constraint firstAttribute="bottom" secondItem="x1z-R2-aQz" secondAttribute="bottom" constant="8" id="TDb-T5-jre"/>
+                                    <constraint firstItem="Nhv-4k-atM" firstAttribute="leading" secondItem="uLS-ry-gxK" secondAttribute="leading" constant="100" id="TLk-8P-ngk"/>
+                                    <constraint firstItem="qSa-bp-roK" firstAttribute="leading" secondItem="uLS-ry-gxK" secondAttribute="leading" constant="200" id="U5U-hO-qTB"/>
+                                    <constraint firstItem="4im-dQ-neI" firstAttribute="top" secondItem="uLS-ry-gxK" secondAttribute="top" constant="8" id="ZVm-Ye-vz9"/>
+                                    <constraint firstItem="D7N-QY-X02" firstAttribute="top" secondItem="uLS-ry-gxK" secondAttribute="top" constant="64" id="eAM-ra-QLE"/>
+                                    <constraint firstAttribute="trailing" secondItem="4im-dQ-neI" secondAttribute="trailing" constant="8" id="fNo-PP-Hlw"/>
+                                    <constraint firstItem="kDu-8D-gv9" firstAttribute="top" secondItem="uLS-ry-gxK" secondAttribute="top" constant="140" id="iuy-pc-PBA"/>
+                                    <constraint firstItem="1aO-HL-pkp" firstAttribute="leading" secondItem="D7N-QY-X02" secondAttribute="leading" id="kZC-UI-WPN"/>
+                                    <constraint firstItem="lNB-zS-dra" firstAttribute="top" secondItem="uLS-ry-gxK" secondAttribute="top" constant="8" id="lDX-uZ-TVq"/>
+                                    <constraint firstItem="1aO-HL-pkp" firstAttribute="top" secondItem="D7N-QY-X02" secondAttribute="bottom" constant="8" id="oor-YN-zY7"/>
+                                    <constraint firstItem="D7N-QY-X02" firstAttribute="leading" secondItem="uLS-ry-gxK" secondAttribute="leading" constant="4" id="uvk-jy-c4A"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1iG-O5-riK">
+                                <rect key="frame" x="0.0" y="228" width="414" height="626"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="oLF-Dx-xAF"/>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="HtH-VJ-QGq"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kh4-g6-XO6">
+                                <rect key="frame" x="208" y="164" width="70" height="90"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q1e-tE-5BW">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="90"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="02C-iU-f0U"/>
+                                    <constraint firstAttribute="trailing" secondItem="q1e-tE-5BW" secondAttribute="trailing" id="IP9-U8-bWG"/>
+                                    <constraint firstItem="q1e-tE-5BW" firstAttribute="leading" secondItem="kh4-g6-XO6" secondAttribute="leading" id="U0h-or-GGK"/>
+                                    <constraint firstAttribute="width" constant="70" id="b63-fG-LnW"/>
+                                    <constraint firstAttribute="bottom" secondItem="q1e-tE-5BW" secondAttribute="bottom" id="gjH-Ny-pSW"/>
+                                    <constraint firstItem="q1e-tE-5BW" firstAttribute="top" secondItem="kh4-g6-XO6" secondAttribute="top" id="nO1-5T-0f5"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="aWJ-Q3-Rhx">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.73725490196078436" green="0.90980392156862744" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="1iG-O5-riK" secondAttribute="bottomMargin" constant="16" id="7hT-On-5bN"/>
+                            <constraint firstItem="kh4-g6-XO6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="208" id="Boc-E3-jFt"/>
+                            <constraint firstItem="kh4-g6-XO6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="120" id="C9z-3K-ndp"/>
+                            <constraint firstItem="1iG-O5-riK" firstAttribute="top" secondItem="uLS-ry-gxK" secondAttribute="bottom" constant="8" id="CYA-g4-8Fd"/>
+                            <constraint firstAttribute="trailing" secondItem="uLS-ry-gxK" secondAttribute="trailing" constant="8" id="PNd-by-RC8"/>
+                            <constraint firstItem="aWJ-Q3-Rhx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PfR-gX-Vmj"/>
+                            <constraint firstItem="1iG-O5-riK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RnG-Lz-f2V"/>
+                            <constraint firstAttribute="trailing" secondItem="1iG-O5-riK" secondAttribute="trailing" id="RnR-Jx-1jG"/>
+                            <constraint firstItem="aWJ-Q3-Rhx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aWn-Tt-H1B"/>
+                            <constraint firstItem="uLS-ry-gxK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="b1T-QK-GFD"/>
+                            <constraint firstItem="uLS-ry-gxK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="48" id="mkc-be-dQU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="aWJ-Q3-Rhx" id="dtP-bW-htD"/>
+                        <outlet property="fromDataPicker" destination="1aO-HL-pkp" id="JMX-ew-Joo"/>
+                        <outlet property="locationButton" destination="4im-dQ-neI" id="EGs-Nw-DXj"/>
+                        <outlet property="propertyListTableView" destination="1iG-O5-riK" id="8nd-2M-PLp"/>
+                        <outlet property="roomsButton" destination="ycV-at-3rD" id="ZQ8-0k-b5O"/>
+                        <outlet property="roomsListTableView" destination="q1e-tE-5BW" id="PPo-qn-iDJ"/>
+                        <outlet property="roomsView" destination="kh4-g6-XO6" id="Xjp-7W-1ct"/>
+                        <outlet property="toDataPicker" destination="jfk-Lw-AO1" id="HOM-D8-GWy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="ycV-at-3rD">
+            <size key="intrinsicContentSize" width="16.5" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrowtriangle.down.fill" catalog="system" width="128" height="124"/>
+        <image name="location.slash" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
